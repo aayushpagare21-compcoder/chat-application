@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatapp</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="/static/client.js"></script>
+  </head>
+  <body>
+    <section class="chat-section">
+      <div class="brand">
+        <img
+          id="imglogo"
+          src="/static/logo2.jpg"
+          alt=""
+          srcset=""
+          height="100px"
+          width="100px"
+        />
+        <h1>Chatapp</h1>
+      </div>
+      <div class="message-area">
+        <div class="message incoming">
+          <h5>Bot-1</h5>
+          <p>Heyyyy</p>
+        </div>
+        <div class="message outgoing">
+          <h5>Bot-2</h5>
+          <p>Heyyyy</p>
+        </div>
+      </div>
+      <div id="text">
+        <div id="text1">
+          <textarea
+            name=""
+            id="textarea"
+            cols="30"
+            rows="2"
+            placeholder="Write a message"
+          ></textarea>
+        </div>
+        <div id="text2">
+          <button id="send">Send</button>
+        </div>
+      </div>
+    </section> 
+    <!-- <marquee behavior="" direction="left"> created by aayush</marquee> -->
+  </body>
+
+  <!-- <script src="/static/socket.io/socket.io.js"></script> --> 
+
+  
+</html>

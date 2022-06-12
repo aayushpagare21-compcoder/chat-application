@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); 
+
+*{ 
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+} 
+
+body { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    min-height: 100vh; 
+    background: #f8f8f8; 
+    font-family: 'Roboto', sans-serif;
+} 
+
+section.chat-section { 
+    width: 800px; 
+    max-width: 90%; 
+    background: rgb(16, 15, 15);  
+    border-radius: 20px;
+    /* box-shadow: 0 10px 15px -3px rgba(0, -0, -0, -0.1), 0 4px 6px -2px rgba(0, -0, -0, -0.5); */
+} 
+
+.brand { 
+    padding: 20px; 
+    background: #202c33; 
+    display: flex; 
+    align-items: center; 
+    border-radius: 10px;
+}  
+
+/* #imglogo { 
+    border-radius: 10px; 
+    margin-right: 10px;
+}  */
+
+.brand h1 { 
+    text-transform: uppercase; 
+    font-size: 28px; 
+    color: #e9edef; 
+    margin-left: 10px;
+}
+ 
+.message-area { 
+    height: 500px; 
+    padding: 17px; 
+    display: flex; 
+    flex-direction: column; 
+    overflow-y: auto; 
+    padding-top: 40px;
+} 
+
+textarea { 
+    width: 100%; 
+    border: none; 
+    font-size: 16px; 
+    outline: none; 
+    background: #fbfbfb; 
+    padding-left:20px; 
+    padding-top: 10px; 
+    margin-bottom: 10px;
+} 
+
+.message { 
+    padding: 20px; 
+    border-radius: 4px; 
+    margin-bottom: 40px; 
+    max-width: 200px; 
+    position: relative;
+} 
+
+.incoming { 
+    background: #f0f0f4;  
+    color: #090909;  
+    /* margin-left: auto; */
+} 
+
+.outgoing { 
+    background: #1b4c2a; 
+    color: #fdfeff; 
+    margin-left: auto; 
+    width: 200px;
+} 
+
+.message h5 { 
+    position: absolute; 
+    top : -20px; 
+    left: 0; 
+    color: rgb(240, 233, 233); 
+    font-size: 14px;
+} 
+
+#send { 
+    height: 30px; 
+    width: 80px;  
+    border: 2px solid white;
+    border-radius: 10px; 
+    background-color: #1b4c2a; ;
+    color: #f1f1f1;
+    margin-top: 10px; 
+    margin-left: 10px; 
+} 
+#text { 
+    display: flex; 
+    flex-direction: row ;
+} 
+#text1 { 
+    width: 100%; 
+    margin-left: 10px;  
+    /* padding-left: 10px; */
+}  
+#text2 { 
+    margin-right: 20px; 
+    margin-left: 20px;
+}
+
+#send:hover { 
+   background-color: #f1f1f1; 
+   color: #333; 
+   border: solid 2px #1b4c2a; 
+} 

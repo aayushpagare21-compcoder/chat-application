@@ -1,0 +1,18 @@
+{
+  "name": "chatapp",
+  "version": "1.0.0",
+  "description": "real time chat application powered by Socekt.io",
+  "main": "index.js",
+  "scripts": {
+    "dev" : "nodemon index"
+  },
+  "author": "Aayush Upendra Pagare",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "socket.io": "^4.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

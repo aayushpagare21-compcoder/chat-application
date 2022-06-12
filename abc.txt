@@ -1,0 +1,40 @@
+
+
+//Creating an express application
+const express = require('express'); 
+const app = express(); 
+
+//Creating an http server
+const http = require('http'); 
+const { Socket } = require('socket.io');
+http.createServer(app);  
+
+//static files 
+app.use(express.static(__dirname + '/static'));  
+
+//Server listening on port 1000
+const port = 1000; 
+app.listen(port, ()=> { 
+    console.log(`listening on port ${port}`); 
+});  
+
+
+
+//Endpoints
+app.get('/', (req, res)=> { 
+    res.sendFile(__dirname + '/index.html');
+});   
+
+// app.get('/socket.io/socket.io.js', (req, res) => {
+//     res.sendFile(__dirname + '/node_modules/socket.io/client-dist/socket.io.js');
+// });
+
+//Socket.io 
+const io = require('socket.io')(http); 
+
+io.on('connection', (socket) => { 
+    console.log('Connected');
+});
+
+
+
